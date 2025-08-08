@@ -25,7 +25,7 @@ const Partners = () => {
   );
 
   return (
-    <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-12 border-b border-[#EAEAEA] mb-[141px] px-6">
+    <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-12 border-b border-[#EAEAEA] mb-8 md:mb-[141px] px-6">
       <div className="mb-4 md:mb-0 md:w-1/4">
         <h2 className="text-lg tracking-[2.5px] text-[#999a9d]">
           Partners with Dubai's leading Developer
