@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family:  "Plus Jakarta Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.btn-fill-bg {
+  position: relative;
+  overflow: hidden;
+  transition: color 0.5s ease-in-out;
+  z-index: 0;
+}
+.btn-fill-bg::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  height: 100%;
+  width: 0;
+  background-color: #F8824C;
+  transition: width 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.btn-fill-bg:hover::before {
+  width: 100%;
+}
+
+.hover\:rotate-left-right:hover {
+  animation: rotateLeftRight .5s ease-in-out infinite;
+}
+/* .round-circle::before {
+  content: "";
+  width: 0;
+  position: absolute;
+  margin: 0 auto;
+  top: 50%;
+  background-color: #F8824C;
+} */
+ .round-circle::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: #F8824C;
+  border-radius: 50%;
+  opacity: 0.6;
+  transform: translate(-50%, -50%) scale(0);
+  transition: none;
+  z-index: 0;
+}
+
+.round-circle.animate-in::before {
+  animation: roundCornersIn 2s forwards;
+}
+
+.round-circle.animate-out::before {
+  animation: roundCornersOut 2s forwards;
+}
+
+
+@keyframes rotateLeftRight {
+  0%, 100% {
+    transform: rotate(8deg);
+  }
+  50% {
+    transform: rotate(-8deg);
+  }
+}
+
+@keyframes roundCornersIn {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0.6;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+  }
+  100% {
+    width: 200%;   /* large enough to cover whole element */
+    height: 200%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    border-radius: 50%;
+  }
+}
+@keyframes roundCornersOut {
+  0% {
+    width: 200%;
+    height: 200%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    border-radius: 50%;
+  }
+  100% {
+    width: 0;
+    height: 0;
+    opacity: 0.6;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
