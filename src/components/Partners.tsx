@@ -25,7 +25,7 @@ const Partners = () => {
   );
 
   return (
-    <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-12 border-b border-[#EAEAEA] mb-8 md:mb-[141px] px-6">
+    <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-2 md:gap-12 border-b border-[#EAEAEA] mb-8 md:mb-[141px] px-6">
       <div className="mb-4 md:mb-0 md:w-1/4">
         <h2 className="text-lg tracking-[2.5px] text-[#999a9d]">
           Partners with Dubai's leading Developer
@@ -37,7 +37,7 @@ const Partners = () => {
           {partners.map((item, idx) => (
             <div
               key={idx}
-              className="min-w-[140px] sm:min-w-[160px] md:min-w-[168px] flex items-center justify-center px-4 py-2"
+              className="min-w-[80px] sm:min-w-[160px] md:min-w-[168px] flex items-center justify-center md:px-4 md:py-2"
             >
               <img
                 src={item.image}

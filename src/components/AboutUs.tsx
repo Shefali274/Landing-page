@@ -6,7 +6,7 @@ import TrustedImg from '../assets/trusted.svg';
 
 const AboutUs = () => {
   return (
-     <div className="2xl:max-w-[1400px] mx-auto my-[100px] px-4">
+     <div className="2xl:max-w-[1400px] mx-auto my-8 md:my-[100px] px-8 md:px-0">
       <div className="flex flex-col lg:flex-row items-center">
         <div className="w-full lg:w-1/2 relative">
           <img
@@ -21,7 +21,7 @@ const AboutUs = () => {
             style={{animation: 'spin 10s linear infinite'}}
           />
         </div>
-        <div className="w-full lg:w-1/2 pl-[164px]">
+        <div className="w-full lg:w-1/2 pt-8 md:pt-0 md:pl-[164px]">
           <h2 className="text-[40px] font-light text-black leading-[58px] mb-8 tracking-[-1.8px]">
             About Us
           </h2>
@@ -40,10 +40,10 @@ const AboutUs = () => {
           </div>
 
           {/* Brand Logos */}
-          <div className="flex items-center gap-6 pt-4 mb-[60px]">
-            <img src={Awards} alt="Awards" className="h-[44px] w-auto object-contain border-r border-r-[#E5E5E5] pr-4" />
-            <img src={Google} alt="Google" className="h-[33px] w-auto object-contain" />
-            <img src={Rating} alt="Rating" className="h-[44px] w-auto object-contain" />
+          <div className="flex items-center gap-[8px] md:gap-6 pt-4 mb-8 md:mb-[60px]">
+            <img src={Awards} alt="Awards" className="h-[24px] md:h-[44px] w-auto object-contain border-r border-r-[#E5E5E5] pr-4" />
+            <img src={Google} alt="Google" className="h-[24px] md:h-[33px] w-auto object-contain" />
+            <img src={Rating} alt="Rating" className="h-[24px] md:h-[44px] w-auto object-contain" />
           </div>
         </div>
       </div>

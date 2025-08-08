@@ -34,7 +34,7 @@ const teamMembers = [
 
 const OurTeam = () => {
   return (
-    <div className="2xl:max-w-[1400px] mx-auto mb-[150px] px-4">
+    <div className="2xl:max-w-[1400px] mx-auto mb-8 md:mb-[150px] px-4">
       <h2 className="text-[40px] font-light text-black mb-3 leading-[48px] capitalize">
         Our Team / Instructors
       </h2>

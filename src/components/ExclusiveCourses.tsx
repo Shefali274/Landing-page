@@ -53,19 +53,19 @@ const CoursesData = [
 
 const ExclusiveCourses = () => {
   return (
-    <div className="2xl:max-w-[1400px] mx-auto mb-[150px] bg-gray-100 rounded-[40px] px-[60px] py-[100px]">
+    <div className="2xl:max-w-[1400px] mx-auto mb-8 md:mb-[150px] bg-gray-100 rounded-[40px] p-8 md:px-[60px] md:py-[100px]">
       <h2 className="text-[40px] font-light text-black mb-3 leading-[48px] capitalize ">Our Exclusive courses</h2>
       <p className="text-[#494949] text-xl mb-[60px]">Take Your Skills to the Next Level with Our Expert-Led courses</p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-[60px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-[60px]">
         {CoursesData.map((course, index) => (
           <div
             key={index}
-            className="bg-white rounded-xl flex flex-row items-center"
+            className="bg-white rounded-xl flex flex-col md:flex-row items-center"
           >
             <img
               src={course.image}
               alt={course.title}
-              className="w-[222px] h-full object-cover"
+              className="w-full md:w-[222px] h-full object-cover"
             />
             <div className='px-10 py-8'>
                 <h3 className="text-2xl font-normal mb-4 leading-7">{course.title}</h3>

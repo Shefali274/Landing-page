@@ -45,7 +45,7 @@ const LegacyOfExcellence = () => {
     setHoveredIndex(null);
   };
   return (
-   <div className="2xl:max-w-[1400px] mx-auto mb-8 md:mb-[150px] sm:p-4">
+   <div className="2xl:max-w-[1400px] mx-auto mb-8 md:mb-[150px] px-8 sm:p-0">
       <h2 className="text-[40px] font-light text-black mb-[60px] leading-[48px]">Our legacy of excellence</h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-[16px]">
